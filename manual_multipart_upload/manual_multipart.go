@@ -48,7 +48,7 @@ func main() {
 	fileSize := stats.Size()
 
 	// put file in byteArray
-	buffer := make([]byte, fileSize)
+	buffer := make([]byte, fileSize) // wouldn't want to do this for a large file because it would store a potentially super large file into memory
 	file.Read(buffer)
 
 	// start multipart upload
