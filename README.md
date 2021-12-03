@@ -10,9 +10,10 @@ There are 2 examples of uploading multipart with aws-sdk-go-v2:
 ## How to run the code
 
 1. git clone the repo
-2. chdir into either the manual_multipart or manager directories
-3. find a file that you would like to upload and update the const variables at the top
-4. within the example directory, run:
+2. populate your AWS credentials in ~/.aws/config
+3. chdir into either the manual_multipart or manager directories
+4. find a file that you would like to upload and update the const variables at the top
+5. within the example directory, run:
 
         go run .
-5. look in the s3 bucket and find the uploaded file
+6. look in the s3 bucket and find the uploaded file
